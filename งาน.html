@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัว</title>
+    <style>
+      /* เรียบง่ายและเป็นระเบียบ */
+      :root{
+        --bg:#fafafa;
+        --card:#ffffff;
+        --muted:#555;
+        --accent:#2b6cb0;
+        --border:#e6e6e6;
+      }
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial;
+        background:var(--bg);
+        color:#222;
+        -webkit-font-smoothing:antialiased;
+        padding:20px;
+      }
+      .wrap{
+        max-width:980px;
+        margin:0 auto;
+        background:var(--card);
+        border:1px solid var(--border);
+        border-radius:8px;
+        padding:18px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      }
+      h1{
+        margin:0 0 12px 0;
+        font-size:20px;
+        color:var(--accent);
+      }
+
+      /* responsive video */
+      .video{
+        position:relative;
+        width:100%;
+        padding-top:56.25%; /* 16:9 */
+        margin-bottom:16px;
+        background:#000;
+        border-radius:6px;
+        overflow:hidden;
+      }
+      .video iframe{
+        position:absolute;
+        left:0; top:0;
+        width:100%;
+        height:100%;
+        border:0;
+      }
+
+      /* table */
+      .styled-table{
+        width:100%;
+        border-collapse:collapse;
+        margin:8px 0 0 0;
+        font-size:15px;
+      }
+      .styled-table thead th{
+        text-align:left;
+        padding:10px 12px;
+        background:#f5f7fb;
+        color:var(--muted);
+        border-bottom:1px solid var(--border);
+      }
+      .styled-table tbody td{
+        padding:10px 12px;
+        border-bottom:1px solid #f0f0f0;
+      }
+      .styled-table tbody tr:nth-child(even){
+        background:#fcfdff;
+      }
+      .styled-table tbody tr:last-child td{
+        border-bottom:0;
+      }
+
+      /* small screens */
+      @media (max-width:640px){
+        .styled-table thead{
+          display:none;
+        }
+        .styled-table, .styled-table tbody, .styled-table tr, .styled-table td{
+          display:block;
+          width:100%;
+        }
+        .styled-table tr{
+          margin:0 0 12px 0;
+          border:1px solid var(--border);
+          border-radius:6px;
+          padding:8px;
+        }
+        .styled-table td{
+          padding:8px;
+        }
+        .styled-table td:before{
+          content:attr(data-label);
+          display:block;
+          font-weight:600;
+          margin-bottom:6px;
+          color:var(--muted);
+          font-size:13px;
+        }
+      }
+        
+    </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="kik">
+    <img src="C:\Users\5-903\Downloads\IMG_7866.PNG" style="max-width: 25%; height: auto; display: block; margin: 0 auto;">
+</div>
+
+    
+
+    <div class="video" aria-hidden="false">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@decimo_won/video/7565537885034745095" data-video-id="7565537885034745095" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@decimo_won" href="https://www.tiktok.com/@decimo_won?refer=embed">@decimo_won</a> <p></p> <a target="_blank" title="♬ เสียงต้นฉบับ  - ทุเรียน" href="https://www.tiktok.com/music/เสียงต้นฉบับ-ทุเรียน-7565537921667861264?refer=embed">♬ เสียงต้นฉบับ  - ทุเรียน</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+
+    <table class="styled-table" summary="ตารางเวลาเรียน">
+        <h1>ตารางสอน</h1>
+      <thead>
+        <tr>
+            <th>วัน</th>
+            <th>เวลา</th>
+            <th>วิชา</th>
+            <th>อาจารย์</th>
+            <th>ห้อง</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td data-label="วัน">จันทร์</td>
+            <td data-label="เวลา">09.00-11.30</td>
+            <td data-label="วิชา">CSI101 (ปฏิบัติ)</td>
+            <td data-label="อาจารย์">อ.วุฏฐชัย</td>
+            <td data-label="ห้อง">05-0901</td>
+        </tr>
+        <tr>
+            <td data-label="วัน"></td>
+            <td data-label="เวลา">12.00-14.30</td>
+            <td data-label="วิชา">CSI102</td>
+            <td data-label="อาจารย์">อ.เบล</td>
+            <td data-label="ห้อง">05-0409</td>
+        </tr>
+        <tr>
+            <td data-label="วัน">อังคาร</td>
+            <td data-label="เวลา">-</td>
+            <td data-label="วิชา">-</td>
+            <td data-label="อาจารย์">-</td>
+            <td data-label="ห้อง">-</td>
+        </tr>
+        <tr>
+            <td data-label="วัน">พุธ</td>
+            <td data-label="เวลา">09.00-10.40</td>
+            <td data-label="วิชา">USC10967</td>
+            <td data-label="อาจารย์">อ.มาลิวรรณ</td>
+            <td data-label="ห้อง">-</td>
+        </tr>
+        <tr>
+            <td data-label="วัน"></td>
+            <td data-label="เวลา">13.00-14.40</td>
+            <td data-label="วิชา">CSI101 (ทฤษฏี)</td>
+            <td data-label="อาจารย์">อ.วุฏฐชัย</td>
+            <td data-label="ห้อง">05-0404</td>
+        </tr>
+        <tr>
+            <td data-label="วัน">พฤหัสบดี</td>
+            <td data-label="เวลา">13.00-14.40</td>
+            <td data-label="วิชา">CSI199</td>
+            <td data-label="อาจารย์">อ.มาสวีร์</td>
+            <td data-label="ห้อง">01-0500</td>
+        </tr>
+        <tr>
+            <td data-label="วัน">ศุกร์</td>
+            <td data-label="เวลา">-</td>
+            <td data-label="วิชา">-</td>
+            <td data-label="อาจารย์">-</td>
+            <td data-label="ห้อง">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
